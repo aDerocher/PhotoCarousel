@@ -1,8 +1,3 @@
-// let pics = document.getElementById("pics1")
-// let pics2 = document.getElementById("pics2")
-
-// let pos1 = 0
-// let pos2 = 400
 
 function hide(ele){
     ele.classList.add("hidden")
@@ -27,12 +22,11 @@ function moveToSide(dir){
 
     for (let i = 1; i < 3; i++) {
         let picBox = document.getElementById(`pics${i}`)
+        // make sure display is not invisible
         picBox.style.display="flex"; 
         curClassName = picBox.className
         realCNum = getNumFromClass(curClassName)
-        
-        // if its a hyphen, the num is negative, and we need the next num
-        
+                
         // if the number is 4, set it to negative 4
         if(realCNum === 4 && dir ){ 
             picBox.style.display="none";
@@ -44,10 +38,6 @@ function moveToSide(dir){
             realCNum = 6; 
             picBox.style.transition= "0s";
         }
-        // console.log(realCNum);
-        // if(realCNum > 5 || realCNum <-6){
-        //     console.log(picBox.style.display)
-        // }
         // set the new margin
         picBox.style.marginLeft = `${100 * (realCNum + move)}px`
         // set the new class
@@ -60,7 +50,6 @@ function moveToSide(dir){
 
 function toggleWindow(){
     let window = document.getElementById(`window`)
-    console.log(window.style)
     if(window.style.overflow === ''){
         window.style.overflow = 'hidden';
     } else {
