@@ -5,7 +5,8 @@ Photo carousel created with javascript and css
  
 ### Overview
 Carousel can hold 6 images and will scroll infinately either left or right and back and forth.
-The carousel works using DOM manipultion javascript. The images are all doubled into 2 panels. The panels shift by using the button clicks, and when they slide to far one direction, then one panel becomes invisible and moves to the other side.  
+The carousel works using DOM manipultion javascript. The images are all doubled into 2 panels. The panels shift by using the button clicks, and when they slide to far one direction, then one panel becomes invisible and moves to the other side.
+The sliding happens through calculations based on the panels class names. The classname contains an integer which is multiplied by 100 to shift the margins left and right. 
 
 ### Using this Carousel
 Its suggested to use 3, 6, or 12 images with this particular carousel given how the move commands are built. 
