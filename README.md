@@ -13,6 +13,7 @@ In order to see exactly how the carousel is working, you can use the 'Toggle Win
 ![](images/readme-images/carousel_2.PNG)
 
 ### Plans for the future
+I created this carousel simply as a hobby task. I thought it would be fun to make my own instead of using a package.
 Going forward I would like to make this carousel more adaptable. Goals include:
  - simple way to vary number of images
  - offer different options for the buttons
