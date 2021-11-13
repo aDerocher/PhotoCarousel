@@ -1,5 +1,6 @@
 # PhotoCarousel
 Photo carousel created with javascript and css
+
 ![](images/readme-images/carousel_1.PNG)
  
 ### Overview
