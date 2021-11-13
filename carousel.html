@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/carousel.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <h2>Carousel</h2>
+    <div class='carousel-container'>
+        <button class='car-btn' onclick={moveToSide(0)}>&lt;</button>
+        <div id=window>
+            <div id="pics1" class='p0'>
+                <div class="car-img-cont"><img class='car-img' src='images/clothing/h-1.png'></div>
+                <div class="car-img-cont"><img class='car-img' src='images/clothing/h-2.png'></div>
+                <div class="car-img-cont"><img class='car-img' src='images/clothing/h-3.png'></div>
+                <div class="car-img-cont"><img class='car-img' src='images/clothing/h-4.png'></div>
+                <div class="car-img-cont"><img class='car-img' src='images/clothing/h-5.png'></div>
+                <div class="car-img-cont"><img class='car-img' src='images/clothing/h-6.png'></div>
+            </div>
+            <div id="pics2" class='p-6'>
+                <div class="car-img-cont"><img class='car-img' src='images/clothing/h-1.png'></div>
+                <div class="car-img-cont"><img class='car-img' src='images/clothing/h-2.png'></div>
+                <div class="car-img-cont"><img class='car-img' src='images/clothing/h-3.png'></div>
+                <div class="car-img-cont"><img class='car-img' src='images/clothing/h-4.png'></div>
+                <div class="car-img-cont"><img class='car-img' src='images/clothing/h-5.png'></div>
+                <div class="car-img-cont"><img class='car-img' src='images/clothing/h-6.png'></div>
+            </div>
+        </div>    
+        <button class='car-btn' onclick={moveToSide(1)}>&gt;</button>
+    </div>
+    <button onclick="{toggleWindow()}">Toggle Window</button>
+    <br>
+    <p>Secondary buttons in the case you un-hide the window overflow</p>
+    <button class='car-btn' onclick={moveToSide(0)}>&lt;</button>
+    <button class='car-btn' onclick={moveToSide(1)}>&gt;</button>
+    
+    
+    <script src="scripts/carousel.js"></script>
+</body>
+</html>

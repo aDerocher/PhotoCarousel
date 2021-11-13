@@ -1,0 +1,79 @@
+
+.carousel-container{
+    border: 5px solid #3850d88a;
+    /* overflow: hidden; */
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#window{
+    border: 5px solid #3850d88a;
+    /* overflow: hidden; */
+    width: 300px;
+    height: 170px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+}
+
+.car-img-cont{
+    /* background: rgb(164, 83, 240); */
+    margin: 0;
+    padding: 10px 0;
+    /* display: flex;
+    flex-direction: row; */
+    height: 150px;
+    width: 100px;
+}
+
+.car-img{
+    /* background-color: blanchedalmond; */
+    height: 150px;
+    width: 90px;
+    padding: 0 5px
+}
+
+#pics1{
+    /* border: 2px solid rgb(243, 124, 39); */
+    /* background-color: rgb(205, 255, 216); */
+    width: 600px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    transition: 0s;
+    margin-left: 0px;
+    transition: 0.2s;
+}
+#pics2{
+    /* border: 2px solid rgb(42, 39, 243); */
+    /* background-color: rgb(121, 78, 15); */
+    width: 600px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    transition: 0s;
+    margin-left: -600px;
+    transition: 0.2s
+}
+
+#pics2 > * {
+    /* background-color: aqua; */
+}
+.car-btn:hover{
+    background-color: rgb(32, 32, 32);
+    color:white;
+}
+.car-btn{
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    font-size: 16pt;
+    font-weight: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: none;
+    transition: 0.2s
+}
